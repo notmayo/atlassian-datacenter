@@ -1,0 +1,50 @@
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+
+# Ignore runtime data, but preserve directories
+/data/postgres/*
+!/data/postgres/.gitkeep
+
+/data/jira/node1/*
+!/data/jira/node1/.gitkeep
+/data/jira/node2/*
+!/data/jira/node2/.gitkeep
+/data/jira/shared/*
+!/data/jira/shared/.gitkeep
+
+/data/confluence/node1/*
+!/data/confluence/node1/.gitkeep
+/data/confluence/node2/*
+!/data/confluence/node2/.gitkeep
+/data/confluence/shared/*
+!/data/confluence/shared/.gitkeep
+
+/data/bitbucket/node1/*
+!/data/bitbucket/node1/.gitkeep
+/data/bitbucket/node2/*
+!/data/bitbucket/node2/.gitkeep
+/data/bitbucket/shared/*
+!/data/bitbucket/shared/.gitkeep
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+/backups/
+
+# Editor and OS files
+.DS_Store
+.idea/
+.vscode/
